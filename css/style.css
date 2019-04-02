@@ -1,0 +1,143 @@
+html,body {
+     height: 100%;
+     /* This is needed :( */
+    font-family: "Times New Roman", Times, serif;
+}
+
+.cover-image {
+      background-image: url("../asset/backgroundImage.jpeg");
+      background-position: center;
+      background-size: cover;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+      /* The magic of fixed parallax header*/
+}
+.cover-image {
+      background-repeat: no-repeat;
+      -webkit-transition: background-image 1s;
+      transition: background-image 1s;
+      /* centering some text */
+}
+
+.cover-image iframe {
+      width: 100%;
+      height: 100%;
+}
+
+.cover-image h1 {
+      display: table;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 20%;
+      width: 30%;
+      text-align: center;
+      margin: auto;
+      font-size: 3em;
+      font-family: 'Rock Salt', cursive;
+      color: #C0A855;
+      text-shadow: 1px 0 #8D8F8C;
+}
+@media only screen and (max-width: 600px) {
+  .cover-image h1 {
+    font-size: 1em;
+     width: 20%;
+  }
+}
+header {
+      height: 100%;
+      min-height: 100%;
+      width: 100%;
+      display: inline-block;
+      position: relative;
+}
+
+header nav {
+      position: absolute;
+      z-index: 2;
+      bottom: -5px;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.3);
+}
+
+header nav a {
+      font-size: 1.5em;
+      display: inline-block;
+      margin: 20px 30px;
+      text-decoration:none;
+      transition: 0.4s;
+      color: #ffffff;
+}
+
+header nav a:hover{
+      color: #C0A855;
+      padding: 0 10px;
+      font-weight: bold;
+      text-decoration: none;
+}
+
+.content {
+      background: white;
+      padding: 20px 0;
+      width: 100%;
+}
+
+.wrap {
+      width: 100%;
+      margin: 0 auto ;
+      text-align: center;
+}
+
+.upload{
+    border: none;
+    background-color:#C0A855;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 7px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.upload:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+}
+
+#show{
+    color: gray;
+}
+
+#show p:hover{
+    font-weight: bold;
+}
+input[type=text]{
+    border: 1px solid gray;
+  border-radius: 4px;
+}
+
+#drop_zone {
+    background-color: #EEE; 
+    border: #999 5px dashed;
+    width: 290px; 
+    height: 200px;
+    padding: 8px;
+    font-size: 18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
